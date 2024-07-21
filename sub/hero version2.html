@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marvel</title>
+    <!-- 초기화 css -->
+    <link rel="stylesheet" href="../css/reset_2.css">
+    <!-- sub css -->
+    <link rel="stylesheet" href="../css/hero.css">
+    <!-- header css-->
+    <link rel="stylesheet" href="../css/header.css">
+    <!-- footer css -->
+    <link rel="stylesheet" href="../css/footer.css">
+    <!-- 제이쿼리 -->
+    <script src="../js/jquery-3.6.0.min.js"></script>
+    <!-- index js -->
+    <script src="../js/index.js"></script>
+    <!-- 햄버거 클릭 -->
+    <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+    <!-- slick js-->
+    <script src="../slick/slick.min.js"></script>
+    <!-- slick css -->
+    <link rel="stylesheet" href="../slick/slick.css">
+    <link rel="stylesheet" href="../slick/slick-theme.css">
+    <!-- chart js-->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/hammer.js/2.0.8/hammer.min.js" integrity="sha512-UXumZrZNiOwnTcZSHLOfcTs0aos2MzBWHXOHOuB0J/R44QB0dwY5JgfbvljXcklVf65Gc4El6RjZ+lnwd2az2g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/chartjs-plugin-zoom/1.2.1/chartjs-plugin-zoom.min.js" integrity="sha512-klQv6lz2YR+MecyFYMFRuU2eAl8IPRo6zHnsc9n142TJuJHS8CG0ix4Oq9na9ceeg1u5EkBfZsFcV3U7J51iew==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/chartjs-plugin-datalabels/2.1.0/chartjs-plugin-datalabels.min.js" integrity="sha512-Tfw6etYMUhL4RTki37niav99C6OHwMDB2iBT5S5piyHO+ltK2YX8Hjy9TXxhE1Gm/TmAV0uaykSpnHKFIAif/A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+<body>
+    <div id="wrap">
+        <header id="header">
+            <div class="h_cont">
+                <div class="h_right">
+                    <div class="h_id">
+                        <a href="../index.html"><img src="../img/main_page/logo/marvel_logo.png" alt=""></a>
+                    </div>
+                </div>
+                <ul class="h_icon">
+                    <li>
+                        <div id="hamburger-1" class="hamburger nav_btn">
+                            <span class="line"></span>
+                            <span class="line"></span>
+                            <span class="line"></span>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="gnb_box">
+                <nav class="gnb">
+                    <ul class="nav_transmission">
+                        <li>
+                            <h3>CONTENTS</h3>
+                        </li>
+                        <li><a href=""></a></li>
+                    </ul>
+                    <ul class="nav_leaflet">
+                        <li>
+                            <h3>MARVEL</h3>
+                        </li>
+                        <li><a href=""></a></li>
+                    </ul>
+                    <ul class="nav_detail">
+                        <li>
+                            <h3>HERO</h3>
+                        </li>
+                        <li>
+                            <a href="">Hero Introduction</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <div id="container">
+            <section class="seciton_1 hero_section_1">
+                <div class="sub_title" data-trigger>
+                    <span class="text text-blur-out"></span>
+                </div>
+            </section>
+            <section class="section_2">
+                <div class="one-time">
+                    <div class="tasting">
+                        <div class="box rose"></div>
+                        <div class="box img_text">
+                            <div class="text_area">
+                                <h4>로즈 오 드 퍼퓸</h4>
+                                <p class="t_han">장미 향이지만 활기찬 시소 향, 우드, 스파이스, 흙내음, 가벼운 스모크가 더해진 미묘하고 풍성한 노트로 부드러우면서 강렬한
+                                    향수입니다.</p>
+                                <h3 class="title_rose">아이언맨</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tasting">
+                        <div class="box hwyl"></div>
+                        <div class="box img_text">
+                            <div class="text_area">
+                                <h4>휠 오 드 퍼퓸</h4>
+                                <p class="t_han">히노키 숲을 연상시키며 스모키 노트를 시작으로 은은한 스파이스와 짙은 그린, 흙내음이 조화롭게 어우러집니다. 남다른 느낌을
+                                    자아내는 매혹적인 향수입니다.</p>
+                                <h3 class="title_hwyl">캡틴아메리카</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tasting">
+                        <div class="box marrakech"></div>
+                        <div class="box img_text">
+                            <div class="text_area">
+                                <h4>마라케시 오 드 퍼퓸</h4>
+                                <p class="t_han">
+                                    우디한 스파이시 노트와 산뜻한 플로럴 노트의 원초적이고 통념을 깨는 향수로 모로코 마라케시 도시에 대한 깊고 풍부하며 매혹적인 오마주 향수입니다.</p>
+                                <h3 class="title_mrraakech">마라케시</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tasting">
+                        <div class="box tacit"></div>
+                        <div class="box img_text">
+                            <div class="text_area">
+                                <h4>테싯 오 드 퍼퓸</h4>
+                                <p class="t_han">마음을 차분하게 가라앉혀주고 우리 몸의 감각을 일깨워주는 흙내음과 시트러스 노트의 따뜻하고 생기 넘치는 블렌드 향수입니다.</p>
+                                <h3 class="title_tacit">테싯</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tasting">
+                        <div class="box eremia"></div>
+                        <div class="box img_text">
+                            <div class="text_area">
+                                <h4>에레미아 오 드 퍼퓸</h4>
+                                <p class="t_han">밝은 시트러스 노트로 시작해 밀랍의 플로럴, 파우더리 머스크, 비 내린 뒤 콘크리트 내음으로 이어지는 활기차고 상쾌한 향수입니다.
+                                </p>
+                                <h3 class="title_eremia">에레미아</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tasting">
+                        <div class="box karst"></div>
+                        <div class="box img_text">
+                            <div class="text_area">
+                                <h4>카르스트 오 드 퍼퓸</h4>
+                                <p class="t_han">
+                                    미네랄의 탑 노트와 폭풍우의 메탈릭한 베이스 노트가 어우러져 절벽에서 자란 식물과 해안을 연상시킵니다. 무디하면서 상쾌한 향수입니다.</p>
+                                <h3 class="title_krast">카르스트</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tasting">
+                        <div class="box miraceti"></div>
+                        <div class="box img_text">
+                            <div class="text_area">
+                                <h4>미라세티 오 드 퍼퓸</h4>
+                                <p class="t_han">바다 내음과 머스크 향이 떠오르는 우디한 흙내음이 페퍼와 허브 노트를 받쳐줍니다.
+                                    따뜻한 유향 노트의 향수입니다.</p>
+                                <h3 class="title_miraceti">미라세티</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <footer id="footer">
+            <div class="f_line">
+                <div class="f_cont1">
+                    <ul class="f_menu">
+                        <li><a href="">문의하기</a></li>
+                        <li><a href="">자주하는 질문</a></li>
+                        <li><a href="">이용약관</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="f_cont2">
+                <ul class="f_sns">
+                    <li><a href=""><img src="img/main_page/f_sns/instagram.svg" alt=""></a></li>
+                    <li><a href=""><img src="img/main_page/f_sns/twitter_icon.svg" alt=""></a></li>
+                    <li><a href=""><img src="img/main_page/f_sns/liked.in.svg" alt=""></a></li>
+                    <li><a href=""><img src="img/main_page/f_sns/kakao_channel_icon.svg" alt=""></a></li>
+                </ul>
+                <ul class="f_info1">
+                    <li>상호 : 이솝코리아 유한회사</li>
+                    <li>대표자 : 안토니오키프</li>
+                    <li>주소 : 서울특별시 강남구 도산대로 45길 10-6 이솝코리아</li>
+                </ul>
+                <ul class="f_info2">
+                    <li>대표전화 : 1800-1987</li>
+                    <li>사업자 등록 번호 : 220-88-56014</li>
+                    <li>대표 이메일 : aesop@aesop.com</li>
+                    <li>통신판매업 신고번호 : 2014-서울강남-02300</li>
+                    <li>호스팅 사업자 : SAP Hybris</li>
+                </ul>
+                <p class="f_copy">Copyright© 2021 Aesop All Rights Reserved.</p>
+            </div>
+        </footer>
+    </div>
+</body>
+<script>
+$(document).ready(function(){
+    $('.one-time').slick({
+        dots: true,
+        infinite: true,
+        speed: 300,
+        slidesToShow: 4,
+        slidesToScroll: 4,
+    });
+
+    const content = "Hero Introduction";
+    const text = document.querySelector(".text");
+    let i = 0;
+
+    function typing(){
+        if (i < content.length) {
+        let txt = content.charAt(i);
+        text.innerHTML += txt;
+        i++;
+        }
+    }
+    setInterval(typing, 100)
+
+    setTimeout(function() {
+        $('.hero_section_1').css("display","none");
+   },5000)
+
+   setTimeout(function() {
+        $('.section_2').css("opacity","1");
+   },5000)
+
+    let maxPrice = "${resultMap.maxBillPrice * 2}";
+
+    const ctx = document.getElementById('myChart').getContext('2d');
+
+        var gradientStroke = ctx.createLinearGradient(500, 0, 100, 0);
+        gradientStroke.addColorStop(0, '#9BB6FF');
+        gradientStroke.addColorStop(1, '#9BB6FF');
+
+        var gradientFill = ctx.createLinearGradient(500, 0, 100, 0);
+        gradientFill.addColorStop(0, "rgba(197, 212, 255, 0.5)");
+        gradientFill.addColorStop(1, "rgba(197, 212, 255, 0.5)");
+
+    const myChart = new Chart(ctx, {
+        plugins:[ChartDataLabels],
+        type: 'line',
+        data: {
+        labels: ['1월','2월','3월','4월','5월','6월','7월','8월','9월','10월','11월','12월'],
+            datasets: [{
+                label: "Data",
+                borderColor: gradientStroke,
+                pointBorderColor: gradientStroke,
+                pointBackgroundColor: gradientStroke,
+                pointHoverBackgroundColor: gradientStroke,
+                pointHoverBorderColor: gradientStroke,
+                // pointBorderWidth: 10,
+                // pointHoverRadius: 10,
+                pointBackgroundColor: [
+                    gradientStroke,
+                    gradientStroke,
+                    gradientStroke,
+                    gradientStroke,
+                    gradientStroke,
+                    gradientStroke,
+                    gradientStroke,
+                    gradientStroke,
+                    gradientStroke,
+                    gradientStroke,
+                    gradientStroke,
+                    '#fff'
+                ],
+                pointHoverBorderWidth: 1,
+                pointRadius: 5,
+                fill: true,
+                borderDashOffset: 0.0,
+                backgroundColor: gradientFill,
+                borderWidth: 3,
+                label: '# of Votes',
+                data: [120000,10000,150000,140000,20000,120000,10000,150000,140000,20000,120000,10000],
+                datalabels:{
+                    color:'#16349a',
+                    font:{size:14, weight:500},
+                    align:'top',
+                    offset:7,
+                }
+            }]
+        },
+        options: {
+        responsive:true,
+                maintainAspectRatio: false,
+            hover: {
+                mode:null,
+            },
+            scales: {
+                y: {
+                    beginAtZero: true,
+                    ticks: {
+                        maxTicksLimit: 3,
+                        display:false,
+                    },
+                    grid: {
+                        drawTicks: false,
+                        drawBorder: false
+                    }
+                },
+                x : {
+                    min:8,
+                    max:12,
+                    offset:true,
+                    ticks: {
+                        fontColor: "#000",
+                        font: {
+                            weight:500,
+                            size:14,
+                        }
+                    },
+                    grid: {
+                        display: false,
+                    }
+                }
+            },
+            plugins: {
+                legend: {
+                    display:false,
+                },
+                tooltip: {
+                    enabled:false,
+                },
+                zoom: {
+                    zoom: {
+                        wheel: {
+                            enabled: false
+                        },
+                    },
+                    pan: {
+                        enabled:true,
+                        mode: 'x'
+                    },
+                }
+            }
+        }
+    })
+    
+})
+</script>
+</html>

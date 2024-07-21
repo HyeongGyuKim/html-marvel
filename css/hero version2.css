@@ -1,0 +1,72 @@
+@charset "UTF-8";
+
+@font-face {
+  font-family: 'GangwonEdu_OTFBoldA';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2201-2@1.0/GangwonEdu_OTFBoldA.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+
+html {font-size: 62.5%;}
+body {font-size: 1em;/* font-family: 'Noto Serif KR', 'Roboto', sans-serif; font-family: 'GangwonEdu_OTFBoldA', sans-serif;*/ font-family: 'Noto Sans KR', sans-serif;}
+#wrap {overflow: hidden; background: #000;}
+a {text-decoration: none;}
+
+/* #container {padding: 0 40px; max-width: calc(1400px - 4rem);min-width: calc(1024px - 4rem);margin: 70px auto 0;display: flex;justify-content: space-between;align-items: center;} */
+#container {margin: 70px;}
+
+/* secion_1 */
+.hero_section_1 {width: 100%; height: 100%; margin: 25% auto;}
+.sub_title {text-align: center;}
+.sub_title .text {font-size: 100px; color: #fff;}
+.text-blur-out {
+	-webkit-animation: text-blur-out 1.2s cubic-bezier(0.550, 0.085, 0.680, 0.530) 3.5s both;
+	        animation: text-blur-out 1.2s cubic-bezier(0.550, 0.085, 0.680, 0.530) 3.5s both;
+}
+@-webkit-keyframes text-blur-out {
+  0% {
+    -webkit-filter: blur(0.01);
+            filter: blur(0.01);
+  }
+  100% {
+    -webkit-filter: blur(12px) opacity(0%);
+            filter: blur(12px) opacity(0%);
+  }
+}
+@keyframes text-blur-out {
+  0% {
+    -webkit-filter: blur(0.01);
+            filter: blur(0.01);
+  }
+  100% {
+    -webkit-filter: blur(12px) opacity(0%);
+            filter: blur(12px) opacity(0%);
+  }
+}
+
+/* section_2 */
+.section_2 {opacity: 0; height: 100vh;position: relative; transition: 3s;}
+.tasting {position: relative;cursor: pointer;text-align: center;}
+.box {width: 400px;height: 400px;transition: 1s;}
+.rose {background: url(../img/sub_page/hero/ironman_1.jpg);}
+.hwyl {background: url(../img/sub_page/hero/captin.jfif);}
+.marrakech {background: url(../img/sub_page/hero/ironman_1.jpg);}
+.tacit {background: url(../img/sub_page/hero/captin.jfif);}
+.eremia {background: url(../img/perfume_page/section_3/eremia.png);}
+.karst {background: url(../img/perfume_page/section_3/karst.png);}
+.miraceti {background: url(../img/perfume_page/section_3/miraceti.png);}
+.rose, .hwyl, .marrakech, .tacit, .eremia, .karst, .miraceti {-webkit-background-size: cover;background-size: cover;background-position: center center;position: relative;display: -webkit-flex;display: -moz-flex;display: -ms-flex;display: -o-flex;display: flex;justify-content: center;align-items: center;z-index: 1;transform: translateY(200px); box-sizing: border-box; border: 1px solid #fff;}
+.tasting:hover .rose{transform: translateY(0);}
+.tasting:hover .hwyl{transform: translateY(0);}
+.tasting:hover .marrakech{transform: translateY(0);}
+.tasting:hover .tacit{transform: translateY(0);}
+.tasting:hover .eremia{transform: translateY(0);}
+.tasting:hover .karst{transform: translateY(0);}
+.tasting:hover .miraceti{transform: translateY(0);}
+.img_text {display: -webkit-flex;display: -moz-flex;display: -ms-flex;display: -o-flex;display: flex;justify-content: center;align-items: center;padding: 15px;box-sizing: border-box;transform: translateY(-140px);position: relative; border: 1px solid #fff; color: #fff;}
+.tasting:hover .img_text {transform: translateY(0);}
+.text_area h3 {margin-top: 100px;font-size: 2rem;}
+.text_area h4 {margin-top: 80px;font-size: 1.8rem;}
+.text_area .t_han {margin-top: 30px; line-height: 36px; font-size: 1.5rem;}

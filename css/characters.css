@@ -1,0 +1,43 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 300;
+    src: url('/css/font/Roboto-Light.ttf') format('woff2');
+    unicode-range:U+0030-0039;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    src: url('/css/font/Roboto-Regular.ttf') format('woff2');
+    unicode-range:U+0030-0039;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    src: url('/css/font/Roboto-Medium.ttf') format('woff2');
+    unicode-range:U+0030-0039;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    src: url('/css/font/Roboto-Black.ttf') format('woff2');
+    unicode-range:U+0030-0039;
+}
+
+html {font-size: 62.5%; scroll-behavior: smooth;} /* scroll-behavior: smooth 클릭시 부드럽게 이동하는 css */
+body {font-size: 1em;/* font-family: 'Noto Serif KR', 'Roboto', sans-serif; font-family: 'GangwonEdu_OTFBoldA', sans-serif;*/ font-family: 'roboto','Noto Sans KR', sans-serif;  height: auto !important; letter-spacing: -0.75px;}
+#wrap {background: #000;}
+a {text-decoration: none;}
+
+/* #container {padding: 0 40px; max-width: calc(1400px - 4rem);min-width: calc(1024px - 4rem);margin: 70px auto 0;display: flex;justify-content: space-between;align-items: center;} */
+#container {margin: 0px; position: relative;}
+
+#header {background: #000;}

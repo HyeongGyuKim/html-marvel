@@ -1,0 +1,719 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {margin: 0;}
+        .title {border-bottom: 1px solid #B7B7B7; margin-bottom: 20px; display: flex; align-items: flex-end;  padding: 10px; }
+        .title p {margin: 0;font-size: 24px; font-weight: 600;}
+        .title span {line-height: 25px; margin-left: 10px; font-weight: 500; font-size: 18px;}
+        table {border-spacing: 0; width: 100%;}
+        table thead tr {background: #4A73B5; color: #fff; font-size: 14px;}
+        table thead tr th {padding: 10px 0;}
+        table tbody tr td {font-size: 13px; color: #36383b; text-align: center; padding: 10px 0; border-bottom: 1px solid #E0E0E0; font-weight: 600;}
+
+        /* .box {height: 100%; border: 1px solid red; width: 250px; position: fixed; left: 0; top: 0;} */
+        /* .wrap {width: calc(100% - 250px); margin-left: 250px;} */
+        .view {margin-left: 0;}
+        .box_left {left: -300px;}
+    </style>
+    <script src="../js/jquery-3.6.0.min.js"></script>
+</head>
+<script>
+    $(document).ready(function(){
+        $('.button').click(function(){
+            if($('.wrap').hasClass('view')) {
+                $('.wrap').removeClass('view')
+                $('.box').removeClass('box_left')
+            } else {
+                $('.wrap').addClass('view')
+                $('.box').addClass('box_left')
+            }
+
+        })
+    })
+</script>
+<body>
+    <div class="box"></div>
+    <div class="wrap">
+        <div class="title">
+            <p>생산지시현황</p>
+            <span>1/3</span>
+            <!-- <p class="button">클릭</p> -->
+        </div>
+        <table>
+            <caption></caption>
+            <colgroup>
+                <col width="7%">
+                <col width="27%">
+                <col width="3%">
+                <col width="5%">
+                <col width="4%">
+                <col width="4%">
+                <col width="4%">
+                <col width="1.2%">
+                <col width="1.2%">
+                <col width="1.2%">
+                <col width="1.2%">
+                <col width="1.2%">
+                <col width="1.2%">
+                <col width="1.2%">
+                <col width="1.2%">
+                <col width="1.2%">
+                <col width="1.2%">
+                <col width="1.2%">
+                <col width="1.2%">
+                <col width="1.2%">
+                <col width="1.2%">
+                <col width="1.2%">
+                <col width="1.2%">
+                <col width="1.2%">
+                <col width="1.2%">
+                <col width="1.2%">
+                <col width="1.2%">
+                <col width="1.2%">
+                <col width="1.2%">
+                <col width="1.2%">
+                <col width="1.2%">
+                <col width="1.2%">
+                <col width="1.2%">
+                <col width="1.2%">
+                <col width="1.2%">
+                <col width="1.2%">
+                <col width="1.2%">
+            </colgroup>
+            <thead>
+                <tr>
+                    <th>LOT</th>
+                    <th>제품명</th>
+                    <th>계획</th>
+                    <th>총 가동시간</th>
+                    <th>총 수량</th>
+                    <th>양품수량</th>
+                    <th>불량수량</th>
+                    <th>1</th>
+                    <th>2</th>
+                    <th>3</th>
+                    <th>4</th>
+                    <th>5</th>
+                    <th>6</th>
+                    <th>7</th>
+                    <th>8</th>
+                    <th>9</th>
+                    <th>10</th>
+                    <th>11</th>
+                    <th>12</th>
+                    <th>13</th>
+                    <th>14</th>
+                    <th>15</th>
+                    <th>16</th>
+                    <th>17</th>
+                    <th>18</th>
+                    <th>19</th>
+                    <th>20</th>
+                    <th>21</th>
+                    <th>22</th>
+                    <th>23</th>
+                    <th>24</th>
+                    <th>25</th>
+                    <th>26</th>
+                    <th>27</th>
+                    <th>28</th>
+                    <th>29</th>
+                    <th>30</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>20221123-PO-001</td>
+                    <td>TSS STROBE -건아(ver 1.2)(방열판작업)</td>
+                    <td>20000개</td>
+                    <td>2시간</td>
+                    <td>200000개</td>
+                    <td>200000개</td>
+                    <td>000000개</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>20221123-PO-004</td>
+                    <td>C98 SW740SPE 12M & Mini-C(브라켓,러버포함)(통합형)(BTC 노/싸공용브라켓)</td>
+                    <td>50개</td>
+                    <td>2시간</td>
+                    <td>50개</td>
+                    <td>40개</td>
+                    <td>10개</td>
+                    <td style="background: red;"></td>
+                    <td style="background: red;"></td>
+                    <td style="background: red;"></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>20221123-PO-004</td>
+                    <td>C98 SW740SPE 12M & Mini-C(브라켓,러버포함)(통합형)(BTC 노/싸공용브라켓)</td>
+                    <td>50개</td>
+                    <td>2시간</td>
+                    <td>50개</td>
+                    <td>40개</td>
+                    <td>10개</td>
+                    <td style="background: green;"></td>
+                    <td style="background: green;"></td>
+                    <td style="background: green;"></td>
+                    <td style="background: green;"></td>
+                    <td style="background: green;"></td>
+                    <td style="background: green;"></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>20221123-PO-004</td>
+                    <td>C98 SW740SPE 12M & Mini-C(브라켓,러버포함)(통합형)(BTC 노/싸공용브라켓)</td>
+                    <td>50개</td>
+                    <td>2시간</td>
+                    <td>50개</td>
+                    <td>40개</td>
+                    <td>10개</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>20221123-PO-004</td>
+                    <td>C98 SW740SPE 12M & Mini-C(브라켓,러버포함)(통합형)(BTC 노/싸공용브라켓)</td>
+                    <td>50개</td>
+                    <td>2시간</td>
+                    <td>50개</td>
+                    <td>40개</td>
+                    <td>10개</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>20221123-PO-004</td>
+                    <td>C98 SW740SPE 12M & Mini-C(브라켓,러버포함)(통합형)(BTC 노/싸공용브라켓)</td>
+                    <td>50개</td>
+                    <td>2시간</td>
+                    <td>50개</td>
+                    <td>40개</td>
+                    <td>10개</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>20221123-PO-004</td>
+                    <td>C98 SW740SPE 12M & Mini-C(브라켓,러버포함)(통합형)(BTC 노/싸공용브라켓)</td>
+                    <td>50개</td>
+                    <td>2시간</td>
+                    <td>50개</td>
+                    <td>40개</td>
+                    <td>10개</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>20221123-PO-004</td>
+                    <td>C98 SW740SPE 12M & Mini-C(브라켓,러버포함)(통합형)(BTC 노/싸공용브라켓)</td>
+                    <td>50개</td>
+                    <td>2시간</td>
+                    <td>50개</td>
+                    <td>40개</td>
+                    <td>10개</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>20221123-PO-004</td>
+                    <td>C98 SW740SPE 12M & Mini-C(브라켓,러버포함)(통합형)(BTC 노/싸공용브라켓)</td>
+                    <td>50개</td>
+                    <td>2시간</td>
+                    <td>50개</td>
+                    <td>40개</td>
+                    <td>10개</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>20221123-PO-004</td>
+                    <td>C98 SW740SPE 12M & Mini-C(브라켓,러버포함)(통합형)(BTC 노/싸공용브라켓)</td>
+                    <td>50개</td>
+                    <td>2시간</td>
+                    <td>50개</td>
+                    <td>40개</td>
+                    <td>10개</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>20221123-PO-004</td>
+                    <td>C98 SW740SPE 12M & Mini-C(브라켓,러버포함)(통합형)(BTC 노/싸공용브라켓)</td>
+                    <td>50개</td>
+                    <td>2시간</td>
+                    <td>50개</td>
+                    <td>40개</td>
+                    <td>10개</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>20221123-PO-004</td>
+                    <td>C98 SW740SPE 12M & Mini-C(브라켓,러버포함)(통합형)(BTC 노/싸공용브라켓)</td>
+                    <td>50개</td>
+                    <td>2시간</td>
+                    <td>50개</td>
+                    <td>40개</td>
+                    <td>10개</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>20221123-PO-004</td>
+                    <td>C98 SW740SPE 12M & Mini-C(브라켓,러버포함)(통합형)(BTC 노/싸공용브라켓)</td>
+                    <td>50개</td>
+                    <td>2시간</td>
+                    <td>50개</td>
+                    <td>40개</td>
+                    <td>10개</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>20221123-PO-004</td>
+                    <td>C98 SW740SPE 12M & Mini-C(브라켓,러버포함)(통합형)(BTC 노/싸공용브라켓)</td>
+                    <td>50개</td>
+                    <td>2시간</td>
+                    <td>50개</td>
+                    <td>40개</td>
+                    <td>10개</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>20221123-PO-004</td>
+                    <td>C98 SW740SPE 12M & Mini-C(브라켓,러버포함)(통합형)(BTC 노/싸공용브라켓)</td>
+                    <td>50개</td>
+                    <td>2시간</td>
+                    <td>50개</td>
+                    <td>40개</td>
+                    <td>10개</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>

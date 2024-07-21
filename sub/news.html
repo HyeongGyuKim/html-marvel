@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marvel</title>
+    <!-- 초기화 css -->
+    <link rel="stylesheet" href="../css/reset_2.css">
+    <!-- header css-->
+    <link rel="stylesheet" href="../css/header.css">
+    <!-- footer css -->
+    <link rel="stylesheet" href="../css/footer.css">
+    <!-- sub css-->
+    <link rel="stylesheet" href="../css/news.css">
+    <!-- 제이쿼리 -->
+    <script src="../js/jquery-3.6.0.min.js"></script>
+    <!-- index js -->
+    <script src="../js/sub.js"></script>
+    <!-- 햄버거 클릭 -->
+    <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+    <!-- fontawesome -->
+    <script src="https://kit.fontawesome.com/8ec5b7b746.js" crossorigin="anonymous"></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/paginationjs/2.1.4/pagination.min.js"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/paginationjs/2.1.4/pagination.css"/>
+</head>
+<body>
+    <div id="wrap">
+        <header id="header">
+            <div class="h_cont">
+                <div class="h_right">
+                    <div class="h_id">
+                        <a href="../index.html"><img src="../img/main_page/logo/marvel_logo.png" alt=""></a>
+                    </div>
+                </div>
+                <ul class="h_icon">
+                    <li>
+                        <div id="hamburger-1" class="hamburger nav_btn">
+                            <span class="line"></span>
+                            <span class="line"></span>
+                            <span class="line"></span>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="gnb_box">
+                <nav class="gnb">
+                    <ul class="nav_transmission">
+                        <li>
+                            <h3>MARVEL</h3>
+                        </li>
+                        <li>
+                            <a href="../sub/hero.html">Hero</a>
+                        </li>
+                        <li>
+                            <a href="../sub/villain.html">Villain</a>
+                        </li>
+                        <li>
+                            <a href="../sub/comics.html">Marvel Comics</a>
+                        </li>
+                    </ul>
+                    <ul class="nav_leaflet">
+                        <li>
+                            <h3>CONTENTS</h3>
+                        </li>
+                        <li>
+                            <a href="../sub/introduction.html">New Introduction</a>
+                        </li>
+                        <li>
+                            <a href="../sub/news.html">News</a>
+                        </li>
+                        <li>
+                            <a href="../sub/game.html">Marvel Game</a>
+                        </li>
+                    </ul>
+                    <ul class="nav_leaflet">
+                        <li>
+                            <h3>Universe</h3>
+                        </li>
+                        <li>
+                            <a href="../sub/universe.html">Marvel Cinematic Universe</a>
+                        </li>
+                    </ul>
+                    <ul class="nav_leaflet">
+                        <li>
+                            <h3>Shop</h3>
+                        </li>
+                        <li>
+                            <a href="../sub/toy.html">Toy & Collectibles</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <div id="container">
+            <section class="section_1"></section>
+            <section class="section_2">
+                <div class="tabmenu-wrap">
+                    <!-- tab-nav -->
+                    <div class="tab-nav">
+                        <span class="nav on"><a href="#tabcon-01">Marvel Movies</a></span>
+                        <span class="nav"><a href="#tabcon-02">Marvel Comics</a></span>
+                        <span class="nav"><a href="#tabcon-03">Marvel TV Shows</a></span>
+                        <span class="nav"><a href="#tabcon-04">Marvel Games</a></span>
+                        <span class="nav"><a href="#tabcon-05">Digital Series</a></span>
+                        <span class="nav"><a href="#tabcon-06">Culure & Lifestyle</a></span>
+                        <span class="nav"><a href="#tabcon-07">Marvel Podcasts</a></span>
+                    </div>
+                    <!-- //tab-nav -->
+
+                    <!-- tab-con -->
+                    <div class="tab-con">
+                        <div id="tabcon-01" class="con-box" style="display: block;">
+                            <div class="tab_top">
+                                <div class="tab_title">
+                                    <p>LATEST MOVIES NEWS</p>
+                                </div>
+                                <div class="tab_top_wrap">
+                                    <div class="tab_top_left">
+                                        <a href="">
+                                            <img src="../img/sub_page/news/moives/movies1.PNG" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="tab_top_right">
+                                        <h4>MOVIES</h4>
+                                        <a href="">
+                                            <p>'앤트맨과 와스프:퀀텀마니아': 첫 트레일러 데뷔</p>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab_bottom">
+                                <div class="tab_bottom_wrap">
+                                    <div class="tab_bottom_content">
+                                        <a href="">
+                                            <img src="../img/sub_page/news/moives/movies2.png" alt="">
+                                        </a>
+                                        <h4>MOVIES</h4>
+                                        <a href="">
+                                            <p>'Black Panther: Wakanda Forever' 레드카펫 프리미어 라이브 스트리밍 보기</p>
+                                        </a>
+                                    </div>
+                                    <div class="tab_bottom_content">
+                                        <a href="">
+                                            <img src="../img/sub_page/news/moives/movies3.jpg" alt="">
+                                        </a>
+                                        <h4>MOVIES</h4>
+                                        <a href="">
+                                            <p>'Black Panther: Wakanda Forever' 레드카펫 프리미어 라이브 스트리밍 보기</p>
+                                        </a>
+                                    </div>
+                                    <div class="tab_bottom_content">
+                                        <a href="">
+                                            <img src="../img/sub_page/news/moives/movies4.jpg" alt="">
+                                        </a>
+                                        <h4>MOVIES</h4>
+                                        <a href="">
+                                            <p>'Black Panther: Wakanda Forever' 레드카펫 프리미어 라이브 스트리밍 보기</p>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="tabcon-02" class="con-box">
+                            <div class="tab_top">
+                                <div class="tab_title">
+                                    <p>LATEST COMICS NEWS</p>
+                                </div>
+                                <div class="tab_top_wrap">
+                                    <div class="tab_top_left">
+                                        <a href="">
+                                            <img src="../img/sub_page/news/comics/comics1.jpg" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="tab_top_right">
+                                        <h4>COMICS</h4>
+                                        <a href="">
+                                            <p>모든 고스트 라이더</p>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab_bottom">
+                                <div class="tab_bottom_wrap">
+                                    <div class="tab_bottom_content">
+                                        <a href="">
+                                            <img src="../img/sub_page/news/comics/comics2.jpg" alt="">
+                                        </a>
+                                        <h4>COMICS</h4>
+                                        <a href="">
+                                            <p>10월 26일의 새로운 마블 코믹스: 전체 목록</p>
+                                        </a>
+                                    </div>
+                                    <div class="tab_bottom_content">
+                                        <a href="">
+                                            <img src="../img/sub_page/news/comics/comics3.jpg" alt="">
+                                        </a>
+                                        <h4>COMICS</h4>
+                                        <a href="">
+                                            <p>'X-23: Deadly Regenesis'는 팬들을 X-23의 치명적인 초기로 데려갑니다.</p>
+                                        </a>
+                                    </div>
+                                    <div class="tab_bottom_content">
+                                        <a href="">
+                                            <img src="../img/sub_page/news/comics/comics4.jpg" alt="">
+                                        </a>
+                                        <h4>COMICS</h4>
+                                        <a href="">
+                                            <p>MARVEL 퍼즐 퀘스트, 아케이드 PVP의 날을 기념하여 그의 상위 5개 만화에 등장인물로 등장합니다.</p>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="tabcon-03" class="con-box">
+                            <div class="tab_top">
+                                <div class="tab_title">
+                                    <p>LATEST TV SHOW NEWS</p>
+                                </div>
+                                <div class="tab_top_wrap">
+                                    <div class="tab_top_left">
+                                        <a href="">
+                                            <img src="../img/sub_page/news/tvshow/tvshow1.jpg" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="tab_top_right">
+                                        <h4>TV SHOWS</h4>
+                                        <a href="">
+                                            <p>‘She-Hulk’: 찰리 콕스가 맷 머독과 데어데블의 귀환을 말하다.</p>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab_bottom">
+                                <div class="tab_bottom_wrap">
+                                    <div class="tab_bottom_content">
+                                        <a href="">
+                                            <img src="../img/sub_page/news/tvshow/tvshow2.png" alt="">
+                                        </a>
+                                        <h4>TV SHOWS</h4>
+                                        <a href="">
+                                            <p>'She-Hulk' : 마블 스튜디오의 K.E.V.I.N을 소개합니다.</p>
+                                        </a>
+                                    </div>
+                                    <div class="tab_bottom_content">
+                                        <a href="">
+                                            <img src="../img/sub_page/news/tvshow/tvshow3.png" alt="">
+                                        </a>
+                                        <h4>TV SHOWS</h4>
+                                        <a href="">
+                                            <p>'She-Hulk' 에피소드 9 - 제니퍼 월터스 대 K.E.V.I.N.</p>
+                                        </a>
+                                    </div>
+                                    <div class="tab_bottom_content">
+                                        <a href="">
+                                            <img src="../img/sub_page/news/tvshow/tvshow4.png" alt="">
+                                        </a>
+                                        <h4>TV SHOWS</h4>
+                                        <a href="">
+                                            <p>'She-Hulk' 법률 고문 찰스 소울과 함께한 비하인드 스토리</p>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="tabcon-04" class="con-box">
+                            <div class="tab_top">
+                                <div class="tab_title">
+                                    <p>LATEST GAMES NEWS</p>
+                                </div>
+                                <div class="tab_top_wrap">
+                                    <div class="tab_top_left">
+                                        <a href="">
+                                            <img src="../img/sub_page/news/games/game1.jpg" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="tab_top_right">
+                                        <h4>GAMES</h4>
+                                        <a href="">
+                                            <p>MARVEL 퍼즐 맞추기 퀘스트: 아케이드(에드워드 아크라)와 아케이드 (PWN의 왕)</p>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab_bottom">
+                                <div class="tab_bottom_wrap">
+                                    <div class="tab_bottom_content">
+                                        <a href="">
+                                            <img src="../img/sub_page/news/games/game2.jpg" alt="">
+                                        </a>
+                                        <h4>GAMES</h4>
+                                        <a href="">
+                                            <p>할로윈에 뭐하시나요? 마블 게임즈가 당신을 엄호하겠습니다.</p>
+                                        </a>
+                                    </div>
+                                    <div class="tab_bottom_content">
+                                        <a href="">
+                                            <img src="../img/sub_page/news/games/game3.jpg" alt="">
+                                        </a>
+                                        <h4>GAMES</h4>
+                                        <a href="">
+                                            <p>MARVEL SNAP, 모바일 및 PC에서 전 세계적으로 출시</p>
+                                        </a>
+                                    </div>
+                                    <div class="tab_bottom_content">
+                                        <a href="">
+                                            <img src="../img/sub_page/news/games/game4.jpg" alt="">
+                                        </a>
+                                        <h4>GAMES</h4>
+                                        <a href="">
+                                            <p>'Marvel's Spider-Man: Miles Morales'가 11월 18일 PC로 출시됩니다.</p>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="tabcon-05" class="con-box">
+                            <div class="tab_top">
+                                <div class="tab_title">
+                                    <p>DIGITAL SERIES NEWS</p>
+                                </div>
+                                <div class="tab_top_wrap">
+                                    <div class="tab_top_left">
+                                        <a href="">
+                                            <img src="../img/sub_page/news/digital series/digital series1.jpg" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="tab_top_right">
+                                        <h4>DIGITAL SERIES</h4>
+                                        <a href="">
+                                            <p>마블과 부상당한 전사 프로젝트 팀, '마블 메이크 미 어 히어로'</p>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab_bottom">
+                                <div class="tab_bottom_wrap">
+                                    <div class="tab_bottom_content">
+                                        <a href="">
+                                            <img src="../img/sub_page/news/digital series/digital series2.jpg" alt="">
+                                        </a>
+                                        <h4>DIGITAL SERIES</h4>
+                                        <a href="">
+                                            <p>실크는 누구인가?</p>
+                                        </a>
+                                    </div>
+                                    <div class="tab_bottom_content">
+                                        <a href="">
+                                            <img src="../img/sub_page/news/digital series/digital series3.jpg" alt="">
+                                        </a>
+                                        <h4>DIGITAL SERIES</h4>
+                                        <a href="">
+                                            <p>Marvel's Long Story Short: 데드풀이 괴물의 왕이 된 방법</p>
+                                        </a>
+                                    </div>
+                                    <div class="tab_bottom_content">
+                                        <a href="">
+                                            <img src="../img/sub_page/news/digital series/digital series4.jpg" alt="">
+                                        </a>
+                                        <h4>MOVIES</h4>
+                                        <a href="">
+                                            <p>Sammus와 함께 힙합과 아프로 퓨처리즘을 재조명하는 마블의 여성들</p>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="tabcon-06" class="con-box">
+                            <div class="tab_top">
+                                <div class="tab_title">
+                                    <p>CULTURE & LIFESTYLE</p>
+                                </div>
+                                <div class="tab_top_wrap">
+                                    <div class="tab_top_left">
+                                        <a href="">
+                                            <img src="../img/sub_page/news/culture&lifestyle/culture&lifestyle1.jpg" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="tab_top_right">
+                                        <h4>CULTURE & LIFESTYLE</h4>
+                                        <a href="">
+                                            <p>NBA와 마블 스튜디오, '블랙 팬서: 와칸다 포에버' 앞두고 공동 프로모션 캠페인 시작</p>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab_bottom">
+                                <div class="tab_bottom_wrap">
+                                    <div class="tab_bottom_content">
+                                        <a href="">
+                                            <img src="../img/sub_page/news/culture&lifestyle/culture&lifestyle2.jpg" alt="">
+                                        </a>
+                                        <h4>CULTURE & LIFESTYLE</h4>
+                                        <a href="">
+                                            <p>'마블의 여성들과 묻고 답하다': Rebecca Roanhorse & Karen S. Darboe</p>
+                                        </a>
+                                    </div>
+                                    <div class="tab_bottom_content">
+                                        <a href="">
+                                            <img src="../img/sub_page/news/culture&lifestyle/culture&lifestyle3.png" alt="">
+                                        </a>
+                                        <h4>CULTURE & LIFESTYLE</h4>
+                                        <a href="">
+                                            <p>어벤져스 캠퍼스에서 '블랙 팬서: 와칸다 포에버' 기념</p>
+                                        </a>
+                                    </div>
+                                    <div class="tab_bottom_content">
+                                        <a href="">
+                                            <img src="../img/sub_page/news/culture&lifestyle/culture&lifestyle4.jpg" alt="">
+                                        </a>
+                                        <h4>CULTURE & LIFESTYLE</h4>
+                                        <a href="">
+                                            <p>Marvel의 NYCC 2022: 4일차 요약</p>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="tabcon-07" class="con-box">
+                            <div class="tab_top">
+                                <div class="tab_title">
+                                    <p>LATEST PODCAST NEWS</p>
+                                </div>
+                                <div class="tab_top_wrap">
+                                    <div class="tab_top_left">
+                                        <a href="">
+                                            <img src="../img/sub_page/news/podcast/podcast1.jpg" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="tab_top_right">
+                                        <h4>PODCAST</h4>
+                                        <a href="">
+                                            <p>붐붐, 80년대 노스탤지어, 그리고 'X의 그라인드하우스'에 관한 'X-터미네이터' 작가 리아 윌리엄스</p>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab_bottom">
+                                <div class="tab_bottom_wrap">
+                                    <div class="tab_bottom_content">
+                                        <a href="">
+                                            <img src="../img/sub_page/news/podcast/podcast2.jpg" alt="">
+                                        </a>
+                                        <h4>PODCAST</h4>
+                                        <a href="">
+                                            <p>
+                                                Peni Parker를 위한 완벽한 인트로 스토리를 만드는 Ken Niimura</p>
+                                        </a>
+                                    </div>
+                                    <div class="tab_bottom_content">
+                                        <a href="">
+                                            <img src="../img/sub_page/news/podcast/podcast3.jpg" alt="">
+                                        </a>
+                                        <h4>PODCAST</h4>
+                                        <a href="">
+                                            <p>황무지로 돌아갈 시간입니다! '마블 웨이스트랜더: 둠' 출시</p>
+                                        </a>
+                                    </div>
+                                    <div class="tab_bottom_content">
+                                        <a href="">
+                                            <img src="../img/sub_page/news/podcast/podcast4.jpg" alt="">
+                                        </a>
+                                        <h4>PODCAST</h4>
+                                        <a href="">
+                                            <p>'스파이더맨' 편집자 닉 로우, '어메이징 판타지' #1000 내부 모습 공개</p>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- //tab-con -->
+                </div>
+            </section>
+        </div>
+        <footer id="footer" class="section">
+            <div class="f_cont">
+                <div class="f_top">
+                    <img src="../img/main_page/footer/logo/f_marvel_logo.png" alt="">
+                </div>
+                <div class="f_middle">
+                    <div class="f_middle_left">
+                        <div class="f_middle_left_box1">
+                            <dl>
+                                <dt>상호명</dt>
+                                <dd>마블 스튜디오</dd>
+                            </dl>
+                            <dl>
+                                <dt>회장</dt>
+                                <dd>아이작 펄머터</dd>
+                            </dl>
+                            <dl>
+                                <dt>주소</dt>
+                                <dd>서울특별시 강남구 테헤란로 501</dd>
+                            </dl>
+                        </div>
+                        <div class="f_middle_left_box2">
+                            <dl>
+                                <dt>팩스</dt>
+                                <dd>02.000.0000</dd>
+                            </dl>
+                            <dl>
+                                <dt>이메일</dt>
+                                <dd>marvel@google.com</dd>
+                            </dl>
+                        </div>
+                    </div>
+                    <div class="f_middle_right">
+                        <div class="f_middle_right_box1">
+                            <a href="">
+                                <img src="../img/main_page/footer/f_middle/marvel_insider.png" alt="">
+                                <div class="f_m_text">
+                                    <p>MARVEL INSIDER</p>
+                                    <span>Get Rewarded for being a Marvel Fan</span>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="f_middle_right_box2">
+                            <a href="">
+                                <img src="../img/main_page/footer/f_middle/u.png" alt="">
+                                <div class="f_m_text">
+                                    <p>MARVEL UNLIMITED</p>
+                                    <span>Access Over 30,000+ Digital Comics</span>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="f_bottom">
+                    <p class="f_copy">Copyright© 2022 Marvel All Rights Reserved.</p>
+                    <ul class="f_menu">
+                        <li><a href="">문의하기</a></li>
+                        <li><a href="">이용약관</a></li>
+                        <li><a href="">라이센스 계약</a></li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>

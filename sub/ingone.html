@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="refresh" content="8; url=phasetwo.html"> 
+        <title>Marvel</title>
+        <!-- 초기화 css -->
+        <link rel="stylesheet" href="../css/reset_2.css">
+        <!-- sub css -->
+        <link rel="stylesheet" href="../css/ing.css">
+        <!-- aos.css -->
+        <link rel="stylesheet" href="../css/aos.css">
+        <!-- 제이쿼리 -->
+        <script src="../js/jquery-3.6.0.min.js"></script>
+        <!-- index js -->
+        <script src="../js/index.js"></script>
+        <!-- 햄버거 클릭 -->
+        <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+        <!-- slick js-->
+        <script src="../slick/slick.min.js"></script>
+        <!-- slick css -->
+        <link rel="stylesheet" href="../slick/slick.css">
+        <link rel="stylesheet" href="../slick/slick-theme.css">
+        <script src="../js/skrollr.min.js"></script>
+        <script src="../js/skrollr.js"></script>
+        <!-- aos -->
+        <script src="../js/aos.js"></script>
+        <!-- fontawesome -->
+        <script src="https://kit.fontawesome.com/8ec5b7b746.js" crossorigin="anonymous"></script>
+    </head>
+<body>
+    <div id="wrap">
+        <div id="container">
+            <section id="section_1">
+                <div class="section_1_video">
+                    <div class="video_wrap">
+                        <video autoplay muted loop data-keepplaying data-autoplay playsinline class="video">
+                            <source src="../video/move.mp4">
+                            <source src="../video/move.mp4">
+                        </video>
+                    </div>
+                    <div class="skip">
+                        <p>SKIP</p>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+</body>
+<script>
+    // $(document).ready(function(){
+    //     // setTimeout(function() {
+    //     //     window.location.href("phasetwo.html")
+    //     // },8000)
+
+    //     setTimeout('move_page()', 8000);
+
+    //     function move_page(){
+    //         location.href="phasetwo.html"  // 페이지 이동
+    //     }
+    // });
+
+    $(document).ready(function(){
+        $('.skip').click(function(){
+            location.href = "phasetwo.html"
+        })
+    })
+</script>
+</html>

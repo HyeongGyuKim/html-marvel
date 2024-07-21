@@ -1,0 +1,20 @@
+/* footer */
+#footer {background: #333333;height: 200px !important;}
+#footer .f_cont1 {max-width: calc(1400px - 4rem);min-width: calc(1024px - 4rem);margin: 0 auto;}
+#footer .f_line {height: 50px;border-bottom: 1px solid #AAAAAA;}
+.f_cont1 .f_menu {height: 50px;display: flex;align-items: center;box-sizing: border-box;flex-wrap: wrap;}
+.f_menu li {margin-right: 15px;}
+.f_menu li a {text-decoration: none;color: #AAAAAA;font-size: 1.4rem;}
+.f_menu li a:hover {text-decoration: underline; color: #ccc;}
+#footer .f_cont2 {max-width: calc(1400px - 4rem);min-width: calc(1024px - 4rem);margin: 0 auto;display: flex;flex-direction: column;justify-content: center;height: 150px;box-sizing: border-box;}
+.f_cont2 .f_info1 {display: flex;margin-bottom: 10px;flex-wrap: wrap;}
+.f_info1 li {color: #AAAAAA;margin-right: 15px;font-size: 1.2rem;}
+.f_info1 li:first-child {color: #C6A582;}
+.f_cont2 .f_info2 {display: flex;margin-bottom: 10px;flex-wrap: wrap;}
+.f_info2 li {color: #AAAAAA;margin-right: 15px;font-size: 1.2rem;}
+.f_cont2 .f_sns {display: flex;margin-bottom: 20px;}
+.f_sns li {margin-right: 20px;}
+.f_sns li a img {width: 20px;height: 20px;}
+.f_copy {font-size: 1.2rem;color: #d4d4d4;}
+
+#footer .fp-tableCell {height: auto !important;}

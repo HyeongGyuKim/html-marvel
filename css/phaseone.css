@@ -1,0 +1,115 @@
+@charset "UTF-8";
+
+@font-face {
+  font-family: 'GangwonEdu_OTFBoldA';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2201-2@1.0/GangwonEdu_OTFBoldA.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Noto Sans KR */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+
+/* Roboto */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+html {font-size: 62.5%; scroll-behavior: smooth;} /* scroll-behavior: smooth 클릭시 부드럽게 이동하는 css */
+body {font-size: 1em;/* font-family: 'Noto Serif KR', 'Roboto', sans-serif; font-family: 'GangwonEdu_OTFBoldA', sans-serif;*/ font-family: 'roboto','Noto Sans KR', sans-serif; overflow-x: hidden; height: auto !important; letter-spacing: -0.75px;}
+#wrap {overflow: hidden; background: #000;}
+a {text-decoration: none;}
+
+/* #container {padding: 0 40px; max-width: calc(1400px - 4rem);min-width: calc(1024px - 4rem);margin: 70px auto 0;display: flex;justify-content: space-between;align-items: center;} */
+#container {margin: 0px; position: relative;}
+
+#header {background: #000;}
+
+/* section_1 */
+.section_1 {background: url('../img/sub_page/phase/phase1/section_1_bg.jpg') no-repeat center center; height: 500px; margin-top: 70px; background-position: 0 -100px; position: relative; }
+.blackBg {height: 500px; background: #000; opacity: 0.3;}
+.section_1 h4 {font-size: 80px; color: #fff; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); user-select: none;}
+
+/* section_2 */
+.section_2 {height: 3800px; max-width: calc(1400px - 4rem); min-width: calc(1024px - 4rem); margin: 0 auto; padding: 0 40px; position: relative;}
+.s2_bg img {width: 100%; height: 3700px;}
+.box1 {position: absolute; top: 3%; left: 12%; transform: translate(-12%, -3%); display: flex; align-items: center;}
+.box2 {position: absolute; top: 20%; right: 0%; transform: translate(0%, -20%); display: flex; align-items: center; justify-content: space-between; width: 75%;}
+.box3 {position: absolute; top: 41%; left: 2%; transform: translate(-2%, -41%); display: flex; align-items: center;}
+.box4 {position: absolute; top: 61%; left: 2%; transform: translate(-2%, -61%); display: flex; align-items: center;}
+.box5 {position: absolute; top: 80%; left: 2%; transform: translate(-2%, -80%); display: flex; align-items: center;}
+.box6 {position: absolute; bottom: 0%; right: 1%; transform: translate(-1%, 0%); display: flex; align-items: center; justify-content: space-between; width: 75%; z-index: 2;}
+.box1 img, .box2 img, .box3 img, .box4 img, .box5 img, .box6 img {width: 280px; cursor: pointer;}
+.text {color: #fff; margin-left: 100px; width: 40%;}
+.text h4 {font-size: 30px;}
+.text h4 span {font-size: 20px;}
+.text p {font-size: 18px; margin: 15px 0 6px; line-height: 24px;}
+.text2 {color: #fff; width: 50%;}
+.text2 h4 {font-size: 30px;}
+.text2 h4 span {font-size: 20px;}
+.text2 p {font-size: 18px; margin: 15px 0 6px; line-height: 24px;}
+.silver {position: absolute; top: 2%; right: 3%; transform: translate(-3%, -2%); width: 300px; z-index: 2;}
+.flame {position: absolute; top: 1.5%; right: -4%; transform: translate(0%, -1.5%);width: 500px; z-index: 1;}
+.hulk {position: absolute; top: 27%; left: 30%; transform: translate(-30%, -27%); width: 300px; z-index: 2;}
+.stone {position: absolute; top: 27%; left: 23%; transform: translate(-23%, -27%);width: 600px; z-index: 1;}
+.mark {position: absolute; top: 41%; right: 3%; transform: translate(-3%, -41%); width: 250px; z-index: 2;}
+.wreck {position: absolute; top: 45%; right: -4%; transform: translate(0%, -45%); width: 500px; z-index: 1;}
+.thor {position: absolute; top: 60%; right: 3%; transform: translate(-3%, -60%); width: 250px; z-index: 2;}
+.thunder {position: absolute; top: 58%; right: 0%; transform: translate(0%, -58%); width: 400px; z-index: 1;}
+.captain {position: absolute; top: 80%; right: 4%; transform: translate(-4%, -80%); width: 200px; z-index: 2;}
+.fog {position: absolute; top: 80%; right: -8%; transform: translate(0%, -80%); width: 500px; z-index: 1;}
+.avengers {position: absolute; bottom: -6%; left: 35%; transform: translate(-35%, 0%); width: 700px; z-index: 2;}
+
+.villain1 {position: absolute; bottom: -5%; right: 10%; transform: translate(-10%, 0%); width: 300px; z-index: 2;}
+.villain2 {position: absolute; bottom: 7%; left: 0%; transform: translate(0%, -7%); width: 300px; z-index: 1;}
+.villain3 {position: absolute; bottom: 6%; right: 14%; transform: translate(-14%, -6%); width: 700px; z-index: 1;}
+
+
+/* section_3 */
+.section_3 {max-width: calc(1400px - 4rem); min-width: calc(1024px - 4rem); margin: 300px auto 200px; padding: 0 40px;}
+.section_3 div {display: flex; align-items: center; justify-content: center;}
+.section_3 a p {font-size: 15px; border: 1px solid #fff; padding: 20px 40px; color: #fff; display: flex; align-items: center;}
+.section_3 a p i {font-size: 12px; margin-left: 6px;}
+
+/* quick_menu */
+.quick_menu {position:absolute;top:50%;margin-top:-50px;right:2%; transform: translate(-2%, -50%); z-index: 10; display: none;}
+.quick_menu div {width: 55px; height: 45px; display: flex; justify-content: center; align-items: center; transition: all 0.5s ease-in-out; background: #505050; border-bottom: 1px solid #000;}
+.quick_menu div:first-child {border-top-left-radius: 5px; border-top-right-radius: 5px;}
+.quick_menu div:last-child {border-bottom: none; border-bottom-left-radius: 5px; border-bottom-right-radius: 5px;}
+.quick_menu div:hover {cursor: pointer; transition: all 0.5s ease-in-out; text-decoration: underline;}
+/* .quick_menu .quick_menu_miracetti {background-color: #D4E6B9;}
+.quick_menu .quick_menu_karst {background-color: #DFC0F6;}
+.quick_menu .quick_menu_eremia {background-color: #C6E0FB;} */
+.quick_menu div a {text-decoration: none; font-size: 1.1rem; color:#fff; font-weight: 500; display: flex; justify-content: center; align-items: center; width: 100%; height: 100%;}
+.quick_menu div a i {font-size: 14px;}
+.quick_menu div:first-child:hover, .quick_menu div:last-child:hover {text-decoration: none;}
+
+/* modal */
+.modal_nav {position: fixed; width: 30%; top:50%; right:-100%; z-index: 9; transform: translate(50%, -50%);}
+/* .modal_bg {width: 100%; height: 100vh; background-color: rgba(0,0,0,0.7); position: fixed; top:0; right:0; transition: 0.5s; visibility: hidden; opacity: 0;} */
+.modal_bg {width: 100%; height: 100vh; background: url('../img/sub_page/phase/movieBg.png'); position: fixed; top:0; right:0; transition: 0.5s; visibility: hidden; opacity: 0;}
+.active_nav .modal_nav {right: 50%;}
+.active_nav .modal_bg {visibility: visible; opacity: 1; z-index: 2;}
+
+.modal1, .modal2, .modal3, .modal4, .modal5, .modal6 {position:absolute; width:100%; height:100%; /*background: rgba(0,0,0,0.8);*/ top:0; left:0; display:none;}
+.modal_content1 {width:67vw; height:710px; position:relative; top:50%; left:50%; transform: translate(-50%, -55%); box-sizing:border-box; z-index: 21;}
+.stop_scroll {height: 100%; overflow: hidden;}
+.modal_close_btn {position: absolute; top: 1%; right: -2.5%; cursor: pointer;}
+.modal_close_btn i {font-size: 3rem; color: #fff;}
+.video_wrap iframe {position: absolute;}
+
+.modal_video .video_wrap {width: 100%;}
+.video_wrap video {width: 100%; height: 73vh; object-fit: cover;}
+
+/* poster_icon */
+.poster_icon {height: 85px; position: absolute; left: 7%; top: 14%; transform: translate(-7%, -14%); display: flex; flex-direction: column; justify-content: space-between; align-items: center; animation-name: fade; animation-duration: 1.5s; animation-iteration-count: infinite; animation-direction: alternate;}
+.poster_icon img {width: 50px;}
+.poster_icon p {color: #fff; font-size: 1.2rem; text-align: center; line-height: 1.5rem;}
+  
+@keyframes fade {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}

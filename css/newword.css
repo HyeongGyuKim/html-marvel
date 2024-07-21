@@ -1,0 +1,56 @@
+/* 클릭시 부드럽게 이동하는 css */
+scroll-behavior: smooth 
+
+/* 글자 드래그 안되게 막음  */
+user-select : none 
+-moz-user-select: none;
+-webkit-user-select: none;
+-ms-user-select: none;
+
+/* 체크박스, 라디오 버튼등 색 변경 쉽게 할 수 있음 */
+accent-color: #005cab;
+
+/* is 사용법 */
+/* is() 안에 들어있는것들 중에 클래스가 어떤것들을 바꾸겠다. */
+:is(.ex) .haha,h2,h3 {color: green;}
+        
+@supports (display:flex) {
+    /* 만약 해당 브라우저가 flex를 지원 할 경우 아랫값을 적용 시킨다. */
+    .contents {
+        display: flex;
+        margin: 0 5px;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .contents div {
+        flex-grow: 1;
+    }
+}
+
+
+@supports not (display:flex) {
+    /* 만약 해당 브라우저가 flex를 지원 안 할 경우 아랫 값을 적용 시킨다.*/
+    .contents {
+        overflow: hidden;
+    }
+    .contents div {
+        float: left;
+        margin: 0 5px;
+    }
+}
+
+/* 박스 튀어나온듯한 효과 */
+.box {
+    width: 300px;
+    border-radius: 8px;
+    overflow: hidden;
+    margin: 100px auto;
+    transition: all 0.3s cubic-bezier(0.42, 0.0, 0.58, 1.0);
+    height: 300px;
+    background: darkgray;
+}
+
+.box:hover {
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+    transform: translateY(-10px);
+}

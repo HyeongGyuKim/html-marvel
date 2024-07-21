@@ -1,0 +1,97 @@
+/* 스크롤바 커스텀 */
+::-webkit-scrollbar {width: 17px;} /*스크롤바 전체*/
+::-webkit-scrollbar-thumb {background-color: #ced4da;border-radius: 10px;background-clip: padding-box; border: 2px solid transparent;} /* 스크롤 막대 */
+::-webkit-scrollbar-thumb:hover {background-color: #aaaaaa;} /* 스크롤 막대 오버시 */
+::-webkit-scrollbar-track {background-color: #f1f1f1;border-radius: 10px;} /* 스크롤 막대 외부 */
+
+/* header */
+#header {width: 100%;height: 70px;position: fixed;top: 0;z-index: 99;transition: 0.5s;}
+.header_bg {background: #ddddddd5;transition: 0.7s;}
+.header_bg_white {background: #ddddddd5;transition: 0.7s;}
+#header .h_cont {padding: 0 40px; max-width: calc(1400px - 4rem);min-width: calc(1024px - 4rem);margin: 0 auto;height: 70px;display: flex;justify-content: space-between;align-items: center;position: relative;}
+.h_cont .h_right {display: flex;}
+.h_cont .h_id {display: flex; align-items: center;}
+.h_cont .h_id a img {width: 85px;}
+.h_cont .h_id p {font-size: 12px; color:#fff; margin-right: 10px;}
+.h_cont h1 a img {width: 190px;height: 70px;}
+.h_cont .h_icon {display: flex;align-items: center;}
+/* .h_icon li:first-child {margin-right: 20px;} */
+.h_icon li:first-child a img { /* width: 30px; */ height: 26px;}
+.h_icon li svg {color: #fff;}
+
+/* 햄버거 */
+.hamburger {cursor: pointer;position: relative; width: 2.5rem;height: 20px;}
+.hamburger .line {width: 2.5rem;height: 2px;background-color: #fff;display: block;transition: all 0.3s ease-in-out;position: absolute;}
+.line:nth-of-type(1) {margin-top: 0;top: 0;}
+.line:nth-of-type(2) {top: 50%;transform: translateY(-50%);}
+.line:nth-of-type(3) {margin-bottom: 0;bottom: 0;}
+
+/* 햄버거 클릭시 X로 바뀜 */
+#hamburger-1.is-active .line:nth-child(1) {transform: translateY(450%) rotate(45deg);}
+#hamburger-1.is-active .line:nth-child(2) {opacity: 0;}
+#hamburger-1.is-active .line:nth-child(3) {transform: translateY(-450%) rotate(-45deg);}
+
+/* side nav */
+#header .gnb_box {width: 100%;position: absolute;background-color: #052C6F;height: 250px;opacity: 0;visibility: hidden;transition: 0.5s;}
+#header.menu_on .gnb_box {opacity: 1;visibility: visible;}
+.gnb_box .gnb {max-width: calc(1400px - 4rem);min-width: calc(1024px - 4rem);margin: 0 auto;width: auto;height: 250px;display: flex;align-items: flex-start;margin-top: 20.5px;}
+.gnb ul {margin-right: 15rem;}
+.gnb ul li h3 {font-size: 2.5rem;color: #fdfeff; font-weight: 500;padding: 1rem;}
+.gnb ul li a {display: inline-block;font-size: 1.8rem;color: #fff;padding: 1rem;position: relative;text-align: center; font-weight: 300;}
+.gnb ul li a:before {content: '';position: absolute;bottom: 0;left: 0;border-bottom: 1px solid #fff;width: 0;height: 1px;transition: 0.3s;}
+.gnb ul li:hover a:before {width: 100%;}
+/* 헤더 햄버거 이벤트 */
+#header.menu_on {background-color: #052C6F;}
+/* 헤더 스크롤 이벤트 */
+.line_blue {background-color: #052C6F !important;}
+
+/* 검색창 */
+.search_bg {bottom: 0; background: rgba(0, 0, 0, 0); opacity: 0; height: 100vh; visibility: hidden; opacity: 0;}
+.bg_cont {visibility: visible; opacity: 1;}
+#header .search_cont {width: 100%; height: 300px; background: #f0f0f0; display: none; position: absolute; top: 70px;}
+.search_form {width: 900px; border-bottom: 2px solid black; position: absolute; left:50%; top:50%; transform: translate(-50%, -50%);}
+.search_fieldset {display: flex; align-items: flex-end; justify-content: space-between;}
+.search_form .search_fieldset input[type="text"] {border: none; background: none; outline: none; font-size: 2.1rem; margin-bottom: 3px; padding: 0; width: 45vw;}
+.search_form .search_fieldset button {border: none; cursor: pointer; padding: 0;}
+.search_form .search_fieldset .btngo {font-size: 2.5rem;background: none; color: #000;}
+.btnclose {position: absolute; top:5%; right:15.6%; transform: translate(-15.6%, -5%); border: 0; cursor: pointer; background-color: #f0f0f0;}
+.btnclose img {width: 25px;}
+
+/* sub menu */
+#header .sub_menu {position: absolute; width: 100%; height: 50px; background: #f0f0f0; top: 70px; left: 0; padding: 0 37.5%; box-sizing: border-box; display: none;}
+.sub_menu > ul {display: flex; height: 50px; align-items: center;}
+.sub_menu > ul > li {margin-right: 30px;}
+.sub_menu > ul > li > a {height: 50px; width: 100%; text-decoration: none; font-size: 1.3rem; color:rgb(126, 126, 126); font-weight: 600; font-family: 'Noto Sans KR', 'Roboto' ,sans-serif;}
+
+#header.scroll_on {transform: translateY(-100%);}
+
+/* side nav */
+.side_nav {position: fixed;background-color: #f3f3f3;top: 2%;width: 100%;right: -100%;transition: 0.5s;z-index: 8;}
+.side_nav .side_cont {max-width: 620px;min-width: 480px;margin: 0 auto;height: 100vh;}
+.side_cont .side_list {width: 100%;height: 80vh;display: flex;flex-direction: column;justify-content: center;}
+.side_list > li {width: 100%;}
+.side_list li .side_menu {width: 100%;display: flex;justify-content: space-between;align-items: center;}
+.side_list > li > div > p {font-size: 3.5rem;font-family: Arial;font-weight: 400;color: #000;}
+.side_list > li > div > a {font-size: 3.5rem;font-family: Arial;font-weight: 400;color: #000;text-decoration: none;}
+.side_list .side_2, .side_list .side_3 {margin-bottom: 35px;}
+
+/* 메뉴 옆 줄 */
+.side_list li .line1 {display: block;width: 43rem;height: .5px;background-color: #ccc;top: 22%;left: 25%;}
+.side_list li .line2 {display: block;width: 30rem;height: .5px;background-color: #ccc;top: 22%;left: 25%;}
+.side_list li .line3 {display: block;width: 45rem;height: .5px;background-color: #ccc;top: 22%;left: 25%;}
+/* 메뉴 더보기 + 버튼  */
+.side_list li .cross {width: 1.5px;height: 16px;content: "";background-color: #7F7F7F;position: relative;cursor: pointer;transition: all 0.3s ease-in-out;}
+.cross::after {width: 16px;height: 1.5px;content: "";background-color: #7F7F7F; left: -7.5px;position: absolute;top: 7px;}
+/* + 클릭시 X로 바뀜 */
+.cross.is-active {transform: rotate(45deg);}
+.cross::after.is-active {transform: rotate(-45deg);}
+
+/* 사이드 메뉴의 소메뉴 */
+.side_list li ul {height: 15rem;display: flex;flex-direction: column;justify-content: space-around;/* border-left: 0.5px solid #ccc; */padding-left: 2rem;margin: 2rem 0;
+transition: .4s ease-in-out;}
+.side_list li ul a {font-size: 2rem;font-family: 'Noto Sans KR';font-weight: 300;color: #7F7F7F;transition: 0.3s;text-decoration: none;}
+.side_list li ul li:hover a {color: #3D2013;}
+
+/* active side nav */
+.active_nav .side_nav {right: 0;z-index: 10;}
+.hidden {display: none;visibility: hidden;opacity: 0;height: 0 !important;}

@@ -38,8 +38,7 @@ body {font-size: 1em;  height: auto !important; letter-spacing: -0.75px;}
 a {text-decoration: none;}
 
 /* #container {padding: 0 40px; max-width: calc(1400px - 4rem);min-width: calc(1024px - 4rem);margin: 70px auto 0;display: flex;justify-content: space-between;align-items: center;} */
-#container {padding: 0 40px;
-max-width: calc(1400px - 4rem);min-width: calc(1024px - 4rem);margin: 70px auto 0;display: flex;justify-content: space-between;align-items: center;}
+#container {padding: 0 40px;max-width: calc(1680px - 40px);min-width: calc(1064px - 40px);margin: 70px auto 0;display: flex;justify-content: space-between;align-items: center;}
 
 #header {background: #000;}
 
@@ -58,10 +57,10 @@ max-width: calc(1400px - 4rem);min-width: calc(1024px - 4rem);margin: 70px auto 
 .tab_top_wrap {display: flex; align-items: center; justify-content: space-between; width: 100%; margin-bottom: 50px;}
 
 /* section_3 */
-#movie_section_3 {max-width: calc(1400px - 4rem); min-width: calc(1024px - 4rem); margin: 0 auto;}
+#movie_section_3 {max-width: calc(1680px - 40px);min-width: calc(1064px - 40px); margin: 0 auto;}
 #movie_section_3 h4 {font-size: 40px; margin-bottom: 20px; color: #fff;}
 .movieDrama_s3_box {width: 100%; display: flex !important; align-items: center; justify-content: center; margin: 40px 0 80px;}
-.movieDrama_s3_box_text {width: 30%; margin-left: 50px; display: flex; flex-direction: column;}
+.movieDrama_s3_box_text {width: 35%; margin-left: 50px; display: flex; flex-direction: column;}
 .movieDrama_s3_box_text .movieDrama_s3_title {font-size: 30px; color: #fff; line-height: 38px;}
 .movieDrama_s3_box_text .movieDrama_intro {font-size: 16px; color: #fff; margin-top: 15px; line-height: 24px; word-break: break-all;}
 .movieDrama_s3_box_text2 {display: flex; width: 100%; margin-top: 30px;}
@@ -87,10 +86,10 @@ max-width: calc(1400px - 4rem);min-width: calc(1024px - 4rem);margin: 70px auto 
 #movie_section_3 .slick-prev {left: -90px;}
 #movie_section_3 .slick-next {right: -90px;}
 
-
 /* section_4 */
-#drama_section_4 {max-width: calc(1400px - 4rem); min-width: calc(1024px - 4rem); margin: 0 auto;}
+#drama_section_4 {max-width: calc(1680px - 40px);min-width: calc(1064px - 40px); margin: 0 auto;}
 #drama_section_4 h4 {font-size: 40px; margin-bottom: 20px; color: #fff;}
+#drama_section_4 .slick-slide img {width: 300px; height: auto; object-fit: cover;}
 .slider-navs img {height: 300px; object-fit: cover; margin: 0 10px; cursor: pointer;}
 
 /* #section_3 .slick-list {overflow: initial;} */

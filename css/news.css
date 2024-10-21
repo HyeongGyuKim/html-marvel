@@ -34,12 +34,14 @@ a {text-decoration: none;}
 .tab_top_wrap {display: flex; align-items: center; justify-content: space-between; width: 100%; margin-bottom: 50px;}
 .tab_top_left, .tab_top_right {width: 49%;}
 .tab_top_left img {width: 100%; height: 350px; object-fit: cover;}
+.tab_top_left img:hover {opacity: 0.8; transition: 1s;}
 .tab_top_right h4 {font-size: 14px; color: #767676; margin: 10px 0;}
 .tab_top_right a p {font-size: 28px; color: #fff; line-height: 36px;}
 .tab_top_right a:hover p {color: #e62429;}
 .tab_bottom_wrap {width: 100%; display: flex; align-items: flex-start; justify-content: space-between;}
 .tab_bottom_content {width: 32%;}
 .tab_bottom_content a img {width: 100%; height: 250px; object-fit: cover;}
+.tab_bottom_content a img:hover {opacity: 0.8; transition: 1s;}
 .tab_bottom_content h4 {font-size: 14px; color: #767676; margin: 10px 0;}
 .tab_bottom_content a p {font-size: 14px; color: #fff; line-height: 18px; font-weight: 600;}
 .tab_bottom_content a:hover p {color: #e62429;}

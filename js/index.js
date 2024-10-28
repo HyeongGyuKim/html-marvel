@@ -25,13 +25,36 @@ $(document).ready(function () {
 
     let menu_on_off = true;
 
-    $(".hamburger").click(function () {
+    $("#hamburger-1").click(function () {
         if (menu_on_off) {
             $("#header").addClass("menu_on");
             menu_on_off = false;
         } else {
             $("#header").removeClass("menu_on");
             menu_on_off = true;
+        }
+    });
+
+    $(window).resize(function () {
+        if ($(window).width() <= 1023) {
+            $("#header").removeClass("menu_on");
+            $(".hamburger").removeClass("is-active");
+            menu_on_off = true;  // 메뉴 상태 초기화
+        }
+    });
+
+    $("#hamburger-2").click(function () {
+        $('.side_bar').css('left', '0%');
+    });
+
+    $('.side_close').click(function () {
+        $('.side_bar').css('left', '-100%');
+    })
+
+    $(window).resize(function () {
+        if ($(window).width() >= 1024) {
+            $('.side_bar').css('left', '-100%');
+            menu_on_off = true;  // 메뉴 상태 초기화
         }
     });
 

@@ -15,9 +15,10 @@
 
 html {font-size: 62.5%;}
 body {font-size: 1em;/* font-family: 'Noto Serif KR', 'Roboto', sans-serif; font-family: 'GangwonEdu_OTFBoldA', sans-serif;*/ font-family: 'roboto','Noto Sans KR', sans-serif; letter-spacing: -0.75px;}
-#wrap {overflow: hidden; background: #000;}
+#wrap {overflow: hidden; background: #000; position: relative;}
 a {text-decoration: none;}
 footer {height: 400px !important;}
+body #fp-nav {z-index: 10;}
 
 /*main section_1 */
 #container #section_1 {height: 100vh; position: relative;}
@@ -173,8 +174,6 @@ footer {height: 400px !important;}
 .modal_right {background: rgb(243, 243, 243); height: auto; width: 30vw; border-top-right-radius:20px; border-bottom-right-radius: 20px; padding:0 50px; display: flex; flex-direction: column; justify-content: center;}
 .modal_right_text1 {font-size: 2.5rem; line-height: 3.5rem; margin-bottom: 30px;}
 .modal_right_text2 {font-size: 1.5rem; line-height: 2.5rem;} */
-
-
 
 .modal_nav {position: fixed; width: 30%; top:50%; right:-100%; z-index: 9; transform: translate(50%, -50%);}
 /* .modal_nav .side_cont {padding: 0 50px; width: 100%; margin: 0 auto; display: flex; justify-content: center; flex-direction: column; height: 50vh; position: relative; background: #fff; border-radius: 20px;} */

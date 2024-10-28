@@ -51,6 +51,10 @@ a {
     background:transparent;
 }
 
+a:visited {
+    color: #000; /* 방문한 링크 색상 */
+}
+
 /* change colours to suit your needs */
 ins {
     background-color:#ff9;

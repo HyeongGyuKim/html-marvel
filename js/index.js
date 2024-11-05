@@ -73,6 +73,23 @@ $(document).ready(function () {
         adaptiveHeight: true,
         pauseOnHover: true, // 슬라이드 이동	시 마우스 호버하면 슬라이더 멈추게 설정
         // draggable : false 마우스로 드래그 가능 불가능,
+        responsive: [
+        {
+            breakpoint: 1024,
+            settings: {
+                centerMode: false,
+                slidesToShow: 3,
+            }
+        }, {
+            breakpoint: 576,
+            settings: {
+                arrows: true,
+                dots: true,
+                centerMode: false,
+                slidesToShow: 1,
+            }
+        }
+    ]
     });
 
     $('.s4_top_bottom').slick({

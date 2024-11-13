@@ -109,6 +109,7 @@ transition: .4s ease-in-out;}
 .side_content .side_content_boxs .side_title {font-size: 24px; margin-bottom: 15px;}
 .side_content .side_content_boxs .side_menus {background-color: #F8FAFD; border-radius: 5px; display: flex; flex-wrap: wrap; padding: 5px 0;}
 .side_content .side_content_boxs .side_menus li {width: 50%;}
+.side_content .side_content_boxs .side_menus li:nth-child(1):only-child {width: 100%;}
 .side_content .side_content_boxs .side_menus li a {font-size: 16px; padding: 10px 15px; display: block;}
 
 @media screen and (max-width: 1023px) {

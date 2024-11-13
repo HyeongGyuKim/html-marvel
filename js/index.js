@@ -102,6 +102,25 @@ $(document).ready(function () {
         autoplaySpeed : 2000,
         pauseOnHover: true,
         adaptiveHeight: true,
+        responsive: [
+            {
+                breakpoint: 1024,
+                settings: {
+                    centerMode: false,
+                    slidesToShow: 3,
+                    slidesToScroll: 3,
+                }
+            }, {
+                breakpoint: 576,
+                settings: {
+                    arrows: true,
+                    dots: true,
+                    centerMode: false,
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                }
+            }
+        ]
     });
 
 })
